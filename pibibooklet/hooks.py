@@ -186,3 +186,6 @@ user_data_fields = [
 # Recommended only for DocTypes which have limited documents with untranslated names
 # For example: Role, Gender, etc.
 # translated_search_doctypes = []
+
+fixtures = [{"doctype": "Custom Field", "filters": [ ["dt", "in", ("Project")] ]}, {"doctype": "Client Script", "filters": [ ["dt", "in", ("Project")] ]}, {"doctype": "DocType Link", "filters": [ ["parent", "in", ("Project")] ]}]
+
